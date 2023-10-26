@@ -3,7 +3,7 @@ import { Box } from "../components/atoms/box"
 import { Text } from "../components/atoms/typography"
 import { TwitterIcon } from "../components/atoms/icons/twitter"
 import { GHIcon } from "../components/atoms/icons/gh"
-import Logo from "./sk-horizontal-darkmode.svg"
+import Logo from "./sk-horizontal-lightmode.svg"
 import { connectContainer, dividerContainer } from "./style.css"
 import { Divider } from "../components/atoms/divider"
 

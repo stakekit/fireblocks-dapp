@@ -29,7 +29,7 @@ export const widgetContainer = style({ zIndex: 1 })
 
 export const connectContainer = style({
   borderRadius: "110px",
-  background: "rgba(255, 255, 255, 0.05)",
+  background: "rgba(190, 190, 190, 0.3)",
   padding: "15px 25px",
 })
 
