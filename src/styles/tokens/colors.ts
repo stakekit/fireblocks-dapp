@@ -1,9 +1,9 @@
 export const colors = {
-  white: "#fff",
+  white: "#FAFAFA",
   black: "#000",
   transparent: "transparent",
 
-  text: "#FFFFFF",
+  text: "#373737",
   textMuted: "#999999",
   bodyMuted: "#999999",
 
