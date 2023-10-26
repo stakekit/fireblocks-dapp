@@ -4,7 +4,7 @@ import { Text } from "../components/atoms/typography"
 import { TwitterIcon } from "../components/atoms/icons/twitter"
 import { GHIcon } from "../components/atoms/icons/gh"
 import Logo from "./sk-horizontal-lightmode.svg"
-import { connectContainer, dividerContainer } from "./style.css"
+import { connectContainer, dividerContainer, forText } from "./style.css"
 import { Divider } from "../components/atoms/divider"
 
 export const Header = () => {
@@ -24,6 +24,7 @@ export const Header = () => {
         justifyContent="center"
       >
         <Image src={Logo} alt="logo" width={160} height={80} priority />
+        <Text className={forText}>for Fireblocks</Text>
       </Box>
 
       <Box

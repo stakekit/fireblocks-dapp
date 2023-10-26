@@ -36,3 +36,9 @@ export const connectContainer = style({
 export const dividerContainer = style({
   alignSelf: "stretch",
 })
+
+export const forText = style({
+  fontSize: "20px",
+  marginTop: "9.5px",
+  marginLeft: "3px",
+})
