@@ -9,7 +9,7 @@
     {
       "matchDepTypes": ["dependencies"],
       "matchPackagePatterns": ["@stakekit/widget"],
-      "automerge": true
+      "automerge": false
     }
   ]
 }
