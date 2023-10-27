@@ -1,15 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", ":disableRateLimiting"],
+  "extends": [
+    "config:recommended",
+    ":disableRateLimiting",
+    ":maintainLockFilesDisabled"
+  ],
   "packageRules": [
     {
       "matchDepTypes": ["dependencies"],
       "matchPackagePatterns": ["@stakekit/widget"],
-      "automerge": true
-    },
-    {
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchCurrentVersion": "!/^0/",
       "automerge": true
     }
   ]
