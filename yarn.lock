@@ -3382,11 +3382,11 @@ __metadata:
   linkType: hard
 
 "@types/lodash.merge@npm:^4.6.7":
-  version: 4.6.7
-  resolution: "@types/lodash.merge@npm:4.6.7"
+  version: 4.6.9
+  resolution: "@types/lodash.merge@npm:4.6.9"
   dependencies:
     "@types/lodash": "npm:*"
-  checksum: 94cd6fb8e606756a28f45d63c658aacfbce11a151f7fa322c4a3e87aa50d8bf26e0ae8cba0250070a7c5a6792fc51f79abf4c648bbb1850692be386cd76cd0ca
+  checksum: d0dd6654547c9d8d905184d14aa5c2a37a1ed1c3204f5ab20b7d591a05f34859ef09d3b72c065e94ca1989abf9109eb8230f67c4d64a5768b1d65b9ed8baf8e7
   languageName: node
   linkType: hard
 
