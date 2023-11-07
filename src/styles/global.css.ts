@@ -8,8 +8,8 @@ globalStyle("html, body", {
 })
 
 globalStyle("body", {
-  fontFamily: "var(--sk-font-garamond)",
-  background: vars.color.white,
+  fontFamily: vars.fonts.body,
+  background: vars.color.bodyBackground,
   minHeight: "100vh",
 })
 
