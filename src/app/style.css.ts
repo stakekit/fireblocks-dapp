@@ -2,6 +2,7 @@ import { style } from "@vanilla-extract/css"
 import { atoms } from "../styles"
 
 export const container = style({
+  position: "relative",
   height: "100%",
   display: "flex",
   flexDirection: "column",
@@ -23,6 +24,9 @@ export const layoutContainer = style([
 
 export const links = style({
   cursor: "pointer",
+  padding: "14px 20px",
+  borderRadius: "40px",
+  background: "rgba(0, 0, 0, 0.04)",
 })
 
 export const widgetContainer = style({ zIndex: 1 })
@@ -37,8 +41,8 @@ export const dividerContainer = style({
   alignSelf: "stretch",
 })
 
-export const forText = style({
-  fontSize: "20px",
-  marginTop: "9.5px",
-  marginLeft: "3px",
+export const fixedContainer = style({
+  position: "fixed",
+  top: "-40%",
+  right: "-40%",
 })

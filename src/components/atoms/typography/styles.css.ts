@@ -74,7 +74,7 @@ export const textStyles = recipe({
         return acc
       }, {} as Record<Text, { fontSize: typeof vars.text.small.mobile.fontSize; "@media": Record<string, { fontSize: typeof vars.text.small.mobile.fontSize }> }>),
       supportLink: {
-        fontSize: vars.fontSize.xl,
+        fontSize: vars.fontSize.md,
       },
     },
   },

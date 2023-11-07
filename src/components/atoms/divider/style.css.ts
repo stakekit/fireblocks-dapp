@@ -2,7 +2,7 @@ import { RecipeVariants, recipe } from "@vanilla-extract/recipes"
 
 export const styles = recipe({
   base: {
-    background: "rgba(255, 255, 255, 0.10)",
+    background: "rgba(95, 90, 91, 0.20)",
   },
   variants: {
     type: {

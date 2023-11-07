@@ -11,7 +11,7 @@ export const HelpModals = () => (
     justifyContent="center"
     alignItems="center"
     flexDirection="column"
-    gap="8"
+    gap="4"
     my="14"
   >
     <HelpModal
@@ -34,7 +34,12 @@ export const HelpModals = () => (
       }
     />
 
-    <Box as="a" href="https://twitter.com/stakekit" target="_blank">
+    <Box
+      className={links}
+      as="a"
+      href="https://twitter.com/stakekit"
+      target="_blank"
+    >
       <Text variant={{ size: "supportLink" }}>Follow us on Twitter</Text>
     </Box>
 
@@ -42,23 +47,25 @@ export const HelpModals = () => (
       display="flex"
       justifyContent="center"
       alignItems="center"
-      gap="8"
+      gap="4"
       marginTop="8"
     >
       <Box
+        className={links}
         as="a"
         href="https://docs.stakek.it/docs/terms-of-use"
         target="_blank"
       >
-        <Text>Terms & Conditions</Text>
+        <Text variant={{ size: "supportLink" }}>Terms & Conditions</Text>
       </Box>
 
       <Box
+        className={links}
         as="a"
         href="https://docs.stakek.it/docs/privacy-policy"
         target="_blank"
       >
-        <Text>Privacy Policy</Text>
+        <Text variant={{ size: "supportLink" }}>Privacy Policy</Text>
       </Box>
     </Box>
   </Box>

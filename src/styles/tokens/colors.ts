@@ -1,14 +1,9 @@
 export const colors = {
   white: "#FAFAFA",
-  black: "#000",
-  transparent: "transparent",
 
-  text: "#373737",
-  textMuted: "#999999",
-  bodyMuted: "#999999",
+  text: "#000",
+  textMuted: "#00000099",
 
-  bodyBackground:
-    "linear-gradient(344.99deg, #FFC21B 21.96%, #B1A5B9 35.71%, #F46FC8 47.11%, #FF5F25 78.15%, #6D05F3 93.47%)",
-  primaryButtonBackground: "linear-gradient(180deg, #F470C8 0%, #FF602C 100%)",
-  widgetBackground: "rgba(0, 0, 0, 0.7)",
+  bodyBackground: "#F8F8F8",
+  accentColor: "linear-gradient(90deg, #4B6CD9 7.56%, #2F54D4 65.94%)",
 }
