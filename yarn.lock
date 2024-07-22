@@ -2715,13 +2715,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:^8.44.9":
-  version: 8.44.9
-  resolution: "@types/eslint@npm:8.44.9"
+"@types/eslint@npm:^9.0.0":
+  version: 9.6.0
+  resolution: "@types/eslint@npm:9.6.0"
   dependencies:
     "@types/estree": "npm:*"
     "@types/json-schema": "npm:*"
-  checksum: dd78831339267c2010af9485f15f68c3353f086157527442f0ce8a561b1ef01bc3a8d8dd9f9943b347a80a9a7bff7aa7b5ad1c6d664bcfb80cb6b41933c97981
+  checksum: 39fc797c671ec9c9184802b4974748cf45ee1b11d7aaaaede44426abcafd07ec7c18eb090e8f5b3387b51637ce3fdf54499472d8dd58a928f0d005cbacb573b4
   languageName: node
   linkType: hard
 
@@ -9209,7 +9209,7 @@ __metadata:
   resolution: "standalone-dapp@workspace:."
   dependencies:
     "@stakekit/widget": "npm:^0.0.81"
-    "@types/eslint": "npm:^8.44.9"
+    "@types/eslint": "npm:^9.0.0"
     "@types/lodash.merge": "npm:^4.6.9"
     "@types/node": "npm:20.10.4"
     "@types/react": "npm:18.2.45"
