@@ -1,6 +1,6 @@
 "use client"
 
-import "@stakekit/widget/package/css"
+import "@stakekit/widget/style.css"
 import { SKApp, lightTheme } from "@stakekit/widget"
 import { config } from "../../config"
 import { vars } from "../../styles"
@@ -25,8 +25,7 @@ export const Widget = () => {
     <SKApp
       apiKey={config.apiKey}
       theme={theme}
-      connectKitForceTheme="lightMode"
-      forceWalletConnectOnly
+      wagmi={{ forceWalletConnectOnly: true }}
     />
   )
 }
