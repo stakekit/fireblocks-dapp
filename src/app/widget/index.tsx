@@ -4,6 +4,7 @@ import "@stakekit/widget/style.css"
 import { SKApp, lightTheme } from "@stakekit/widget"
 import { config } from "../../config"
 import { vars } from "../../styles"
+import firebaseLogo from "../firebase-logo.png"
 
 const theme: typeof lightTheme = {
   ...lightTheme,
@@ -26,6 +27,12 @@ export const Widget = () => {
       apiKey={config.apiKey}
       theme={theme}
       wagmi={{ forceWalletConnectOnly: true }}
+      disableInjectedProviderDiscovery
+      mapWalletFn={() => ({
+        iconUrl: firebaseLogo.src,
+        name: "Wallet Link",
+        iconBackground: "transparent",
+      })}
     />
   )
 }
