@@ -11,13 +11,22 @@ const theme: typeof lightTheme = {
 
   color: {
     ...lightTheme.color,
-    tabBorder: vars.color.accentColor,
+    tabBorder: vars.color.vibrantBlue,
     primaryButtonBackground: vars.color.accentColor,
     primaryButtonOutline: vars.color.accentColor,
-    primaryButtonHoverBackground: vars.color.accentColor,
-    primaryButtonHoverOutline: vars.color.accentColor,
+    primaryButtonHoverBackground: vars.color.hoverColor,
+    primaryButtonHoverOutline: vars.color.hoverColor,
     primaryButtonActiveBackground: vars.color.accentColor,
     primaryButtonActiveOutline: vars.color.accentColor,
+
+    secondaryButtonColor: vars.color.vibrantBlue,
+    secondaryButtonBackground: vars.color.lightDenimBlue,
+    secondaryButtonOutline: vars.color.accentColor,
+    secondaryButtonHoverColor: vars.color.lightDenimBlue,
+    secondaryButtonHoverBackground: vars.color.hoverColor,
+    secondaryButtonHoverOutline: vars.color.hoverColor,
+    secondaryButtonActiveBackground: vars.color.accentColor,
+    secondaryButtonActiveOutline: vars.color.accentColor,
   },
 }
 
