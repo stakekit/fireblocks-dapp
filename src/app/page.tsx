@@ -19,7 +19,9 @@ export default function Home() {
 
         <Box className={widgetContainer}>
           <Header />
-          <Widget />
+          <Box data-rk="widget-wrapper">
+            <Widget />
+          </Box>
           <HelpModals />
         </Box>
       </Box>
