@@ -30,7 +30,7 @@
 		"@biomejs/biome": "1.9.4",
 		"@types/lodash.merge": "^4.6.9"
 	},
-	"packageManager": "pnpm@10.7.0",
+	"packageManager": "pnpm@10.11.0",
 	"engines": {
 		"node": "22.x"
 	}
