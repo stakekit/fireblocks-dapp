@@ -15,11 +15,11 @@ importers:
         specifier: 22.13.17
         version: 22.13.17
       '@types/react':
-        specifier: 19.1.0
-        version: 19.1.0
+        specifier: 19.1.6
+        version: 19.1.6
       '@types/react-dom':
-        specifier: 19.1.0
-        version: 19.1.0(@types/react@19.1.0)
+        specifier: 19.1.5
+        version: 19.1.5(@types/react@19.1.6)
       '@vanilla-extract/css':
         specifier: ^1.17.1
         version: 1.17.1
@@ -563,13 +563,13 @@ packages:
   '@types/node@22.13.17':
     resolution: {integrity: sha512-nAJuQXoyPj04uLgu+obZcSmsfOenUg6DxPKogeUy6yNCFwWaj5sBF8/G/pNo8EtBJjAfSVgfIlugR/BCOleO+g==}
 
-  '@types/react-dom@19.1.0':
-    resolution: {integrity: sha512-21E2zejNNRtjG4hKIyJz4aWswGEcNFTgttA0bZIRGjj1HA/tbSUxIJnIcYbn98pwJck0cS1bsQhn6eaKqbcFWw==}
+  '@types/react-dom@19.1.5':
+    resolution: {integrity: sha512-CMCjrWucUBZvohgZxkjd6S9h0nZxXjzus6yDfUb+xLxYM7VvjKNH1tQrE9GWLql1XoOP4/Ds3bwFqShHUYraGg==}
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react@19.1.0':
-    resolution: {integrity: sha512-UaicktuQI+9UKyA4njtDOGBD/67t8YEBt2xdfqu8+gP9hqPUPsiXlNPcpS2gVdjmis5GKPG3fCxbQLVgxsQZ8w==}
+  '@types/react@19.1.6':
+    resolution: {integrity: sha512-JeG0rEWak0N6Itr6QUx+X60uQmN+5t3j9r/OVDtWzFXKaj6kD1BwJzOksD0FF6iWxZlbE1kB0q9vtnU2ekqa1Q==}
 
   '@vanilla-extract/babel-plugin-debug-ids@1.2.0':
     resolution: {integrity: sha512-z5nx2QBnOhvmlmBKeRX5sPVLz437wV30u+GJL+Hzj1rGiJYVNvgIIlzUpRNjVQ0MgAgiQIqIUbqPnmMc6HmDlQ==}
@@ -1525,11 +1525,11 @@ snapshots:
     dependencies:
       undici-types: 6.20.0
 
-  '@types/react-dom@19.1.0(@types/react@19.1.0)':
+  '@types/react-dom@19.1.5(@types/react@19.1.6)':
     dependencies:
-      '@types/react': 19.1.0
+      '@types/react': 19.1.6
 
-  '@types/react@19.1.0':
+  '@types/react@19.1.6':
     dependencies:
       csstype: 3.1.3
 
