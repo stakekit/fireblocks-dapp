@@ -1,7 +1,7 @@
 "use client";
 
 import "@stakekit/widget/style.css";
-import { SKApp, lightTheme } from "@stakekit/widget";
+import { lightTheme, SKApp } from "@stakekit/widget";
 import { config } from "../../config";
 import { vars } from "../../styles";
 import firebaseLogo from "../firebase-logo.png";
