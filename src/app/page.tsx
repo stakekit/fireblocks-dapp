@@ -1,4 +1,3 @@
-import React from "react";
 import { Box } from "../components/atoms/box";
 import { DottedBackground } from "../components/molecules/dotted-background";
 import { GradientContainer } from "../components/molecules/gradient-container";
