@@ -1,7 +1,14 @@
 "use client";
 
 import "@stakekit/widget/style.css";
-import { lightTheme, SKApp } from "@stakekit/widget";
+import {
+	createWallet,
+	evmChainGroup,
+	lightTheme,
+	SKApp,
+} from "@stakekit/widget";
+import { createStore } from "mipd";
+import { injected } from "wagmi";
 import { config } from "../../config";
 import { vars } from "../../styles";
 import firebaseLogo from "../firebase-logo.png";
@@ -30,18 +37,63 @@ const theme: typeof lightTheme = {
 	},
 };
 
+const fireblocksProvider = createStore()
+	.getProviders()
+	.find((provider) => provider.info.rdns === "com.fireblocks");
+
 export const Widget = () => {
 	return (
 		<SKApp
 			apiKey={config.apiKey}
 			theme={theme}
-			wagmi={{ forceWalletConnectOnly: true }}
 			disableInjectedProviderDiscovery
-			mapWalletFn={() => ({
-				iconUrl: firebaseLogo.src,
-				name: "Wallet Link",
-				iconBackground: "transparent",
-			})}
+			mapWalletListFn={(walletList) => {
+				return walletList.flatMap((walletGroup: (typeof walletList)[number]) =>
+					walletGroup.groupName === "Ethereum"
+						? {
+								...walletGroup,
+								wallets: [
+									() => ({
+										...createWallet({
+											id: "fireblocks",
+											iconBackground: "#FFF",
+											iconUrl: firebaseLogo.src,
+											name: "Fireblocks",
+											downloadUrls: {
+												ios: "https://apps.apple.com/us/app/fireblocks/id1439296596",
+												android:
+													"https://play.google.com/store/apps/details?id=com.fireblocks.client",
+											},
+											qrCode: "https://fireblocks.com/qrcode",
+											mobile: false,
+											createConnector: injected({
+												target: {
+													id: "fireblocks",
+													name: "Fireblocks",
+													provider: () => fireblocksProvider?.provider,
+													icon: fireblocksProvider?.info.icon,
+												},
+											}),
+										})(),
+										installed: !!fireblocksProvider,
+										rdns: "com.fireblocks",
+										downloadUrls: {
+											android:
+												"https://play.google.com/store/apps/details?id=com.fireblocks.client",
+											ios: "https://apps.apple.com/us/app/fireblocks/id1439296596",
+											qrCode: "https://fireblocks.com/",
+											browserExtension:
+												"https://chromewebstore.google.com/detail/fireblocks-defi-extension/mpmfkenmdhemcjnkfndoiagglhpenolg",
+											chrome:
+												"https://chromewebstore.google.com/detail/fireblocks-defi-extension/mpmfkenmdhemcjnkfndoiagglhpenolg",
+										},
+										chainGroup: evmChainGroup,
+									}),
+								],
+							}
+						: [],
+				);
+			}}
 		/>
 	);
 };
